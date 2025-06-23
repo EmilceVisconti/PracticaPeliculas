@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica películas</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <h1>FilmTime</h1>
+    <img src="./assets/rollo.jpg" alt=" pelicula">
+  </header>
+  <table id="tablaPeliculas">
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Género</th>
+        <th>Descripción</th>
+        <th>Imagen</th>
+        <th>Año</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Fichero tabla JavaScript -->
+    </tbody>
+  </table>
+  <form>
+    <label for="filtroGenero">Filtrar por género:</label>
+    <select id="filtroGenero">
+      <option value="">-- Selecciona --</option>
+      <option value="Comedia">Comedia</option>
+      <option value="Terror">Terror</option>
+      <option value="Drama">Drama</option>
+      <option value="Romántico">Romántico</option>
+    </select>
+  </form>
+
+  <label for="filtroAño">Filtrar por año:</label>
+  <select id="filtroAño">
+    <option value="">--Selecciona--</option>
+    <option value="2010">2010</option>
+    <option value="1972">1972</option>
+    <option value="2014">2014</option>
+    <option value="2021">2021</option>
+  </select>
+
+
+
+  <script src="./script.js"></script>
+
+  <br>
+
+  <footer>
+    © FilmTime 2025
+  </footer>
+</body>
+
+</html>

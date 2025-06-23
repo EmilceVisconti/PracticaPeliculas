@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  padding: 10px 20px;
+  background-color: #222;         
+  color: white;                  
+}
+
+header img {
+  width: 80px;  
+  height: auto;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid grey;
+}
+
+thead th:nth-child(1) {
+  width: 20%;
+}
+
+thead th:nth-child(2) {
+  width: 15%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 10%;
+}
+
+th,
+td {
+  width: 20px;
+  padding: 30px;
+}
+
+
+footer {
+  text-align: center;
+}
