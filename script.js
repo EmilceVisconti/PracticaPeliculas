@@ -128,65 +128,65 @@ selectGenero.addEventListener("change", () => {
 
 //---------------------intento de filtrar por añoo-----------------//
 
-const selectAño = document.querySelector("#filtroAño");
+// const selectAño = document.querySelector("#filtroAño");
 
 // 2. un div donde vamos a mostrar los resultados filtrados
-const FilterAñoDiv = document.createElement("div");
-document.body.appendChild(FilterAñoDiv);
+//const FilterAñoDiv = document.createElement("div");
+//document.body.appendChild(FilterAñoDiv);
 
 
-function filterByAño(año) {
-    for (let i = 0; i < peliculas.length; i++) {
-        if (peliculas[i].año=== año) {
-            return pelicula[i];
-        }
-    }
-    return null; // Si no se encuentra el año
-}
+//function filterByAño(año) {
+   // for (let i = 0; i < peliculas.length; i++) {
+    //    if (peliculas[i].año=== año) {
+     //       return pelicula[i];
+      //  }
+   // }
+    //return null; // Si no se encuentra el año
+//}
 
-function PeliFiltradaAño(año) {
-  FilterAñoDiv.innerHTML = ""; // Limpia contenido anterior
+//function PeliFiltradaAño(año) {
+ // FilterAñoDiv.innerHTML = ""; // Limpia contenido anterior
 
-  const filterbyAño = peliculas.filter(p => p.año === año);
+ //const filterbyAño = peliculas.filter(p => p.año === año);
 
-  if (filterbyAño.length === 0) {
-    FilterAñoDiv.textContent = "No hay ninguna película estrenada este año.";
-    return;
-  }
-}
+  //if (filterbyAño.length === 0) {
+   // FilterAñoDiv.textContent = "No hay ninguna película estrenada este año.";
+   // return;
+  //}
+//}
 
-  FilterAñoDiv.forEach(p => {
-    const contenedor = document.createElement("div");
-    contenedor.style.marginBottom = "20px";
+  //FilterAñoDiv.forEach(p => {
+    //const contenedor = document.createElement("div");
+    //contenedor.style.marginBottom = "20px";
 
-    const titulo = document.createElement("h3");
-    titulo.textContent = p.titulo;
+    //const titulo = document.createElement("h3");
+    //titulo.textContent = p.titulo;
 
-    const año = document.createElement("p");
-    año.textContent = `Año: ${p.año}`;
+   // const año = document.createElement("p");
+    //año.textContent = `Año: ${p.año}`;
 
-    const generoP = document.createElement("p");
-    generoP.textContent = `Género: ${p.genero}`;
+    //const generoP = document.createElement("p");
+    //generoP.textContent = `Género: ${p.genero}`;
 
-    const descripcion = document.createElement("p");
-    descripcion.textContent = p.descripcion;
+    //const descripcion = document.createElement("p");
+    //descripcion.textContent = p.descripcion;
 
-    const imagen = document.createElement("img");
-    imagen.src = p.imagen;
-    imagen.alt = `Imagen de ${p.titulo}`;
-    imagen.style.width = "200px";
+    //const imagen = document.createElement("img");
+    //imagen.src = p.imagen;
+    //imagen.alt = `Imagen de ${p.titulo}`;
+    //imagen.style.width = "200px";
 
-    contenedor.append(titulo, año, generoP, descripcion, imagen);
-    resultadoDiv.appendChild(contenedor);
-  });
+    //contenedor.append(titulo, año, generoP, descripcion, imagen);
+   // resultadoDiv.appendChild(contenedor);
+  //});
 
 
-selectAño.addEventListener("change", () => {
-  const AñoSeleccionado = selectAño.value;
-  if (AñoSeleccionado) {
-    PeliFiltradaAño (AñoSeleccionado);
-  } else {
-    resultadoDiv.innerHTML = "";
-  }
-});
+//selectAño.addEventListener("change", () => {
+ // const AñoSeleccionado = selectAño.value;
+  //if (AñoSeleccionado) {
+   // PeliFiltradaAño (AñoSeleccionado);
+  //} else {
+ //   resultadoDiv.innerHTML = "";
+ // }
+//}); 
 

@@ -1,3 +1,7 @@
+body { 
+  background-color: lightgrey;
+}
+
 header {
   display: flex;
   justify-content: space-between; 
@@ -41,6 +45,22 @@ td {
   padding: 30px;
 }
 
+@media (max-width: 600px) {
+  
+  .tabla {
+    overflow-x: auto; 
+  }
+
+  .tabla th, .tabla td {
+    display: block;
+    text-align: left; 
+    padding: 8px; 
+  }
+
+  .tabla th {
+    font-weight: bold;
+  }
+}
 
 footer {
   text-align: center;
